@@ -1,4 +1,4 @@
-COMADNSO DE VERIFICAION Y DEPURACION DE IOS
+COMANDOS DE VERIFICAION Y DEPURACION DE IOS
 
 R1# show version
 R1# show flash:
@@ -17,3 +17,6 @@ rommon 1> confreg 0x2102
 rommon 1> dir flash:
 rommon 1> boot <Nombre_Imagen_IOS>
 rommon 1> tftpdnld (Para recuperar IOS desde un TFTP)
+
+
+
