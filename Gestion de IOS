@@ -40,3 +40,27 @@ set                 display the monitor variables
 tftpdnld            tftp image download
 unset               unset a monitor variable
 
+
+Respaldo entre la RAM y la NVRAM
+
+Router#copy running-config startup-config 
+Router#copy startup-config running-config
+
+
+Respaldo entre la RAM y un Servidor TFTP
+
+Router#copy running-config tftp:
+Router#copy tftp: running-config 
+
+Respaldo entre NVRAM y un servidor TFTP.
+
+Router#copy startup-config tftp:
+Router#copy tftp: startup-config 
+
+
+
+
+
+
+
+
