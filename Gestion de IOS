@@ -19,11 +19,24 @@ rommon 1> boot <Nombre_Imagen_IOS>
 rommon 1> tftpdnld (Para recuperar IOS desde un TFTP)
 
 
-RECUPERACION DE IOS POR MEDIO DE UN SERVIDOR TFTP
 
-rommon 1>IP_ADDRESS=192.168.10.1
+RECUPERACION DE IOS POR MEDIO DE UN SERVIDOR TFTP
+rommon 1>set
+rommon 1>IP_ADDRESS=192.168.100.1
 rommon 1>IP_SUBNET_MAST=255.255.255.0
-rommon 1>DEFAULT_GATEWAY=192.168.10.1
-rommon 1>TFTP_SERVER=192.168.10.10
+rommon 1>DEFAULT_GATEWAY=192.168.100.1
+rommon 1>TFTP_SERVER=192.168.100.10
 rommon 1>TFTP_fILE=c2800nm-advipservicesk9-mz.124-15.T1.bin
+rommon 1>tftpdnld   /*Descargar archivo 
+
+*******COMANDOS EN MODO ROMMOM********
+
+boot                boot up an external process
+confreg             configuration register utility
+dir                 list files in file system
+help                monitor builtin command help
+reset               system reset
+set                 display the monitor variables
+tftpdnld            tftp image download
+unset               unset a monitor variable
 
