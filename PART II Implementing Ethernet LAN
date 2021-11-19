@@ -1,0 +1,31 @@
+------------------------USING CLI
+
+switch#no debug
+switch#undebug all
+switch#erase startup-config
+switch#erase nvram
+
+
+------------------------LAN SWITCHING
+
+switch#show mac address-table dynamic
+switch#show mac address-table count
+switch#clear mac address-table dynamic
+switch#show mac address-table aging-time
+
+---------------------------OTHER CONFIGURATION
+
+switch#history size _____
+switch#loggin synchronous______
+switch#no loggin console
+switch#exec-timeout _____minutos___ 
+
+----------------------------EXEC COMMAND
+
+switch#show running-config | begin line vty
+switch#show dhcp lease
+switch#show crypto key mypublic rsa
+switch#show ip ssh
+switch#show ssh
+switch#show ip default-gateway
+switch#show history
