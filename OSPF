@@ -78,3 +78,13 @@ between 1 and 65,535, inclusive.
 speed command, with speed being a number in kilobits per second (Kbps).
 3. Change the reference bandwidth, using router OSPF subcommand auto-cost
 reference-bandwidth ref-bw, with a unit of megabits per second (Mbps).
+
+
+
+
+Requirement Best show Command
+Hello and dead timers must match.                           show ip ospf interface
+They must be in the same area.                              show ip ospf interface brief
+RIDs must be unique.                                        show ip ospf
+They must pass any neighbor authentication.                 show ip ospf interface
+OSPF process must not be shut down. show ip ospf,           show ip ospf interface
