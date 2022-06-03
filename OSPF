@@ -35,3 +35,9 @@ FULL/DROTHER: The neighbor state is full, and the neighbor is neither the DR nor
 2WAY/DROTHER: The neighbor state is 2-way, and the neighbor is neither the DR nor
 BDR—that is, a DROther router. (It also implies that the local router is also a DROther
 router because otherwise the state would reach a full state.)
+
+            Additional OSPFv2 Features
+Passive interfaces
+■ Default routes
+■ Metrics
+■ Load balancing
