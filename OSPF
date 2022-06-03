@@ -68,3 +68,13 @@ router because otherwise the state would reach a full state.)
 ■ Default routes
 ■ Metrics
 ■ Load balancing
+
+
+            OSPF Metrics (Cost)
+            
+1. Set the cost explicitly, using the ip ospf cost x interface subcommand, to a value
+between 1 and 65,535, inclusive.
+2. Although it should be avoided, change the interface bandwidth with the bandwidth
+speed command, with speed being a number in kilobits per second (Kbps).
+3. Change the reference bandwidth, using router OSPF subcommand auto-cost
+reference-bandwidth ref-bw, with a unit of megabits per second (Mbps).
