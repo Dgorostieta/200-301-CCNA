@@ -1,0 +1,26 @@
+
+      OSPF Verification Commands
+
+CONFIG (network and ip ospf commands) 
+
+#show running-config
+#show ip protocols
+
+ENABLED INTERFACES (Discover with Hello)
+
+#show ip ospf interface
+#show ip ospf interface type number
+#show ip interface brief
+
+NEIGBORS (Flood LSAs)
+#show ip ospf neighbors
+#show ip ospf neighbors
+
+LSDB (SPF Calculation)
+#show ip ospf rib
+
+RIB( Admin Distance)
+#show ip route 
+# show ip route ospf
+# show ip route subnet mask
+# show ip route | section subnet
