@@ -1,5 +1,31 @@
 
-      OSPF Verification Commands
+            Implementing Single-Area OSPFv2
+
+Step 1. Use the router ospf process-id global command to enter OSPF configuration
+mode for a particular OSPF process.
+Step 2. (Optional) Configure the OSPF router ID by doing the following:
+A. Use the router-id id-value router subcommand to define the router ID, or
+B. Use the interface loopback number global command, along with an ip
+address address mask command, to configure an IP address on a loopback
+interface (chooses the highest IP address of all working loopbacks), or
+C. Rely on an interface IP address (chooses the highest IP address of all working
+nonloopbacks).
+Step 3. Use one or more network ip-address wildcard-mask area area-id router
+subcommands to enable OSPFv2 on any interfaces matched by the configured
+address and mask, enabling OSPF on the interface for the listed area.
+
+
+
+
+            OSPF Interface Configuration Example
+Step 1. Use the no network network-id area area-id subcommands in OSPF configuration
+mode to remove the network commands.
+Step 2. Add one ip ospf process-id area area-id command in interface configuration
+mode under each interface on which OSPF should operate, with the correct
+OSPF process (process-id) and the correct OSPF area number.
+      
+      
+            OSPF Verification Commands
 
 CONFIG (network and ip ospf commands) 
 
@@ -37,7 +63,8 @@ BDR—that is, a DROther router. (It also implies that the local router is also 
 router because otherwise the state would reach a full state.)
 
             Additional OSPFv2 Features
-Passive interfaces
+            
+■ Passive interfaces
 ■ Default routes
 ■ Metrics
 ■ Load balancing
