@@ -70,7 +70,7 @@ router because otherwise the state would reach a full state.)
 ■ Load balancing
 
 
-            OSPF Metrics (Cost)
+            Setting the Cost Based on Interface and Reference Bandwidth
             
 1. Set the cost explicitly, using the ip ospf cost x interface subcommand, to a value
 between 1 and 65,535, inclusive.
